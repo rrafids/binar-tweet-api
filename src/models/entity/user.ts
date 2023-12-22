@@ -1,5 +1,5 @@
 import { Model, ModelObject } from 'objection';
-import knexInstance from '../../../config/postgresql';
+import knexInstance from '../../config/postgresql';
 
 export class UserEntity extends Model {
   id?: number;

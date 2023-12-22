@@ -1,5 +1,5 @@
 import { Model } from 'objection';
-import knexInstance from '../../../config/postgresql';
+import knexInstance from '../../config/postgresql';
 import { User, UserEntity } from './user';
 import { Pojo } from 'objection';
 
