@@ -35,6 +35,10 @@ const tweetsHandler = new TweetsHandler(tweetsService);
 const swaggerSpec = swaggerJsdoc(swaggerConfig);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+app.get('/health', (req, res) => {
+  res.send('server healthy');
+});
+
 // Define routes
 // Users
 app.get(
