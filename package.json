@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "./server.ts",
   "scripts": {
-    "start": "ts-node-dev ./src/server.ts",
+    "start": "node ./dist/src/server.js",
     "dev": "ts-node-dev ./src/server.ts",
     "lint": "eslint ./src --ext .ts",
     "migrate:up": "knex migrate:up",
     "migrate:rollback": "knex migrate:rollback",
     "migrate:rollback:all": "knex migrate:rollback --all",
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "license": "MIT",
   "dependencies": {

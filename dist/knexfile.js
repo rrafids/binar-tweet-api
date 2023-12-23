@@ -5,9 +5,11 @@ const config = {
     development: {
         client: 'postgresql',
         connection: {
-            database: 'twitter_orm',
-            user: '',
-            password: '',
+            host: 'roundhouse.proxy.rlwy.net',
+            database: 'railway',
+            user: 'postgres',
+            password: 'b63DfFABfA1*-GbbA233233A6gf31E54',
+            port: 11053,
         },
         pool: {
             min: 2,

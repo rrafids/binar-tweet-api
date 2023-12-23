@@ -31,6 +31,9 @@ const tweetsHandler = new tweets_1.default(tweetsService);
 // Swagger
 const swaggerSpec = (0, swagger_jsdoc_1.default)(swaggerOption_1.swaggerConfig);
 app.use('/api-docs', swagger_ui_express_1.default.serve, swagger_ui_express_1.default.setup(swaggerSpec));
+app.get('/health', (req, res) => {
+    res.send('server healthy');
+});
 // Define routes
 // Users
 app.get('/api/users', auth_2.default.authenticate, 
